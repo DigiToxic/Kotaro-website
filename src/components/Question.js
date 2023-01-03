@@ -57,7 +57,7 @@ function Question() {
           <p>1- Who are we?</p>
 
           <Arrow rotation={rotation} onClick={handleClick}>
-            <img src="/images/arrow.png" onClick={toggleCollapsed}/>
+            <img src="/images/arrow.png" alt="" onClick={toggleCollapsed}/>
           </Arrow>
         </Answer>
         <BurgerNav isVisible={isVisible}>
@@ -69,7 +69,7 @@ function Question() {
         <Answer2>
           <p>2- Utility? </p>
           <Arrow rotation={rotation2} onClick={handleClick2}>
-            <img src="/images/arrow.png" onClick={() => setIsVisible2(!isVisible2)}/>
+            <img src="/images/arrow.png" alt="" onClick={() => setIsVisible2(!isVisible2)}/>
           </Arrow>
         </Answer2>
           <BurgerNav3 isVisible={isVisible2}>
@@ -81,7 +81,7 @@ function Question() {
         <Answer2>
           <p>3- How do I get on the allowlist?</p>
           <Arrow rotation={rotation3} onClick={handleClick3}>
-            <img src="/images/arrow.png" onClick={() => setIsVisible3(!isVisible3)}/>
+            <img src="/images/arrow.png" alt="" onClick={() => setIsVisible3(!isVisible3)}/>
           </Arrow>
         </Answer2>
         <BurgerNav4 isVisible={isVisible3}>
@@ -93,7 +93,7 @@ function Question() {
         <Answer2>
           <p>4- What is the total supply?</p>
           <Arrow rotation={rotation4} onClick={handleClick4}>
-            <img src="/images/arrow.png"  onClick={() => setIsVisible4(!isVisible4)}/>
+            <img src="/images/arrow.png" alt="" onClick={() => setIsVisible4(!isVisible4)}/>
           </Arrow>
         </Answer2>
         <BurgerNav5 isVisible={isVisible4}>
@@ -105,7 +105,7 @@ function Question() {
         <Answer2>
           <p>5- What is the mint price for one Kotaro and When can I mint?</p>
           <Arrow rotation={rotation5} onClick={handleClick5}>
-            <img src="/images/arrow.png"  onClick={() => setIsVisible5(!isVisible5)}/>
+            <img src="/images/arrow.png" alt="" onClick={() => setIsVisible5(!isVisible5)}/>
           </Arrow>
         </Answer2>
         <BurgerNav6 isVisible={isVisible5}>
@@ -117,7 +117,7 @@ function Question() {
       <Answer3>
         <p>6- How do I collab with you?</p>
         <Arrow rotation={rotation6} onClick={handleClick6}>
-          <img src="/images/arrow.png"  onClick={() => setIsVisible6(!isVisible6)}/>
+          <img src="/images/arrow.png" alt="" onClick={() => setIsVisible6(!isVisible6)}/>
         </Arrow>
       </Answer3>
         <BurgerNav2 isVisible={isVisible6}>

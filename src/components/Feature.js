@@ -18,22 +18,22 @@ function feature() {
       <Slider className='Overflow1'>
         <Marquee gradient={false} speed={200} className="Marquee">
           <FirstDiv>
-            <img src="/images/Carousel/Nonoku1.png" />
+            <img src="/images/Carousel/Nonoku1.png" alt="" />
           </FirstDiv>
           <SecondDiv>
-            <img src="/images/Carousel/Nonoku2.png" />
+            <img src="/images/Carousel/Nonoku2.png" alt="" />
           </SecondDiv>
           <ThirdDiv>
-            <img src="/images/Carousel/Nonoku3.png" />
+            <img src="/images/Carousel/Nonoku3.png" alt="" />
           </ThirdDiv>
           <ForthDiv>
-            <img src="/images/Carousel/Nonoku1.png" />
+            <img src="/images/Carousel/Nonoku1.png" alt="" />
           </ForthDiv>
           <FiveDiv>
-            <img src="/images/Carousel/Nonoku2.png" />
+            <img src="/images/Carousel/Nonoku2.png" alt="" />
           </FiveDiv>
           <SixDiv>
-            <img src="/images/Carousel/Nonoku3.png" />
+            <img src="/images/Carousel/Nonoku3.png" alt="" />
           </SixDiv>
         </Marquee>
       </Slider>
@@ -41,22 +41,22 @@ function feature() {
       <Slider className='Overflow2'>
         <Marquee gradient={false} direction="right" speed={200} className="Marquee">
           <FirstDiv>
-            <img src="/images/Carousel/Nonoku4.png" />
+            <img src="/images/Carousel/Nonoku4.png" alt="" />
           </FirstDiv>
           <SecondDiv>
-            <img src="/images/Carousel/Nonoku5.png" />
+            <img src="/images/Carousel/Nonoku5.png" alt="" />
           </SecondDiv>
           <ThirdDiv>
-            <img src="/images/Carousel/Nonoku6.png" />
+            <img src="/images/Carousel/Nonoku6.png" alt="" />
           </ThirdDiv>
           <ForthDiv>
-            <img src="/images/Carousel/Nonoku4.png" />
+            <img src="/images/Carousel/Nonoku4.png" alt="" />
           </ForthDiv>
           <FiveDiv>
-            <img src="/images/Carousel/Nonoku5.png" />
+            <img src="/images/Carousel/Nonoku5.png" alt="" />
           </FiveDiv>
           <SixDiv>
-            <img src="/images/Carousel/Nonoku6.png" />
+            <img src="/images/Carousel/Nonoku6.png" alt="" />
           </SixDiv>
         </Marquee>
       </Slider>
@@ -64,22 +64,22 @@ function feature() {
       <Slider className='Overflow3'>
         <Marquee gradient={false} speed={200} className="Marquee">
           <FirstDiv>
-            <img src="/images/Carousel/Nonoku7.png" />
+            <img src="/images/Carousel/Nonoku7.png" alt="" />
           </FirstDiv>
           <SecondDiv>
-            <img src="/images/Carousel/Nonoku8.png" />
+            <img src="/images/Carousel/Nonoku8.png" alt="" />
           </SecondDiv>
           <ThirdDiv>
-            <img src="/images/Carousel/Nonoku9.png" />
+            <img src="/images/Carousel/Nonoku9.png" alt="" />
           </ThirdDiv>
           <ForthDiv>
-            <img src="/images/Carousel/Nonoku7.png" />
+            <img src="/images/Carousel/Nonoku7.png" alt="" />
           </ForthDiv>
           <FiveDiv>
-            <img src="/images/Carousel/Nonoku8.png" />
+            <img src="/images/Carousel/Nonoku8.png" alt="" />
           </FiveDiv>
           <SixDiv>
-            <img src="/images/Carousel/Nonoku9.png" />
+            <img src="/images/Carousel/Nonoku9.png" alt="" />
           </SixDiv>
         </Marquee>
       </Slider>
