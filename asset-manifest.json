@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kotaro-website/static/css/main.4cff3ad1.css",
-    "main.js": "/kotaro-website/static/js/main.d61add46.js",
-    "static/js/787.b94ef3e4.chunk.js": "/kotaro-website/static/js/787.b94ef3e4.chunk.js",
-    "index.html": "/kotaro-website/index.html",
-    "main.4cff3ad1.css.map": "/kotaro-website/static/css/main.4cff3ad1.css.map",
-    "main.d61add46.js.map": "/kotaro-website/static/js/main.d61add46.js.map",
-    "787.b94ef3e4.chunk.js.map": "/kotaro-website/static/js/787.b94ef3e4.chunk.js.map"
+    "main.css": "/Kotaro-website/static/css/main.4cff3ad1.css",
+    "main.js": "/Kotaro-website/static/js/main.88aaa1fb.js",
+    "static/js/787.b94ef3e4.chunk.js": "/Kotaro-website/static/js/787.b94ef3e4.chunk.js",
+    "index.html": "/Kotaro-website/index.html",
+    "main.4cff3ad1.css.map": "/Kotaro-website/static/css/main.4cff3ad1.css.map",
+    "main.88aaa1fb.js.map": "/Kotaro-website/static/js/main.88aaa1fb.js.map",
+    "787.b94ef3e4.chunk.js.map": "/Kotaro-website/static/js/787.b94ef3e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4cff3ad1.css",
-    "static/js/main.d61add46.js"
+    "static/js/main.88aaa1fb.js"
   ]
 }
