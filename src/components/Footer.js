@@ -26,7 +26,7 @@ const Container = styled.div`
 `
 
 const Image1 = styled.div`
-  margin-left: 100px;
+  margin-left: 5%;
 
   img {
     width: 150px;
@@ -34,10 +34,9 @@ const Image1 = styled.div`
 `
 
 const Image2 = styled.div`
-  margin-right: 100px;
-
+  margin-right: 5%;
   img {
-    width: 2
+    width: 153px;
     200px;
   }
 `

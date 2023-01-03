@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'
 
 function Question() {
@@ -8,7 +8,6 @@ function Question() {
   const [isVisible4, setIsVisible4] = useState(false);
   const [isVisible5, setIsVisible5] = useState(false);
   const [isVisible6, setIsVisible6] = useState(false);
-  const [isVisible7, setIsVisible7] = useState(false);
   
   const [rotation, setRotation] = useState(0);
   const [rotation2, setRotation2] = useState(0);
@@ -16,8 +15,10 @@ function Question() {
   const [rotation4, setRotation4] = useState(0);
   const [rotation5, setRotation5] = useState(0);
   const [rotation6, setRotation6] = useState(0);
-  const [rotation7, setRotation7] = useState(0);
 
+  const toggleCollapsed = () => {
+    setIsVisible(!isVisible);
+  }
 
   const handleClick = () => {
     setRotation(rotation + 180)
@@ -43,10 +44,6 @@ function Question() {
     setRotation6(rotation6 + 180);
   };
 
-  const handleClick7 = () => {
-    setRotation7(rotation7 + 180);
-  };
-
   return (
     <Container id='Question'>
       <h2>Frequently Asked Questions</h2>
@@ -57,86 +54,74 @@ function Question() {
 
       <Box>
         <Answer>
-          <p>Q: What is Lorem Ipsum?</p>
+          <p>1- Who are we?</p>
 
           <Arrow rotation={rotation} onClick={handleClick}>
-            <img src="/images/arrow.png" onClick={() => setIsVisible(!isVisible)}/>
+            <img src="/images/arrow.png" onClick={toggleCollapsed}/>
           </Arrow>
         </Answer>
         <BurgerNav isVisible={isVisible}>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Ledding by a team of blockchain enthusiasts and collectors that have experience in fields like business management, design, and software development.</p>
         </BurgerNav>
       </Box>
 
       <Box>
         <Answer2>
-          <p>Q: What is Lorem Ipsum?</p>
+          <p>2- Utility? </p>
           <Arrow rotation={rotation2} onClick={handleClick2}>
             <img src="/images/arrow.png" onClick={() => setIsVisible2(!isVisible2)}/>
           </Arrow>
         </Answer2>
-        <BurgerNav isVisible={isVisible2}>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </BurgerNav>
+          <BurgerNav3 isVisible={isVisible2}>
+              <p>Utility is a mysterious force that drives our actions, yet it remains hidden from view. We can only trust our instincts and make our best guesses. Even the most carefully planned actions can be upended by the unpredictable nature of utility. Only time will tell!</p>
+          </BurgerNav3>
       </Box>
 
       <Box>
         <Answer2>
-          <p>Q: What is Lorem Ipsum?</p>
+          <p>3- How do I get on the allowlist?</p>
           <Arrow rotation={rotation3} onClick={handleClick3}>
             <img src="/images/arrow.png" onClick={() => setIsVisible3(!isVisible3)}/>
           </Arrow>
         </Answer2>
-        <BurgerNav isVisible={isVisible3}>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </BurgerNav>
+        <BurgerNav4 isVisible={isVisible3}>
+            <p>Join our community by registering for our <a href="https://www.premint.xyz/home/">premint</a> or engaging with our tweets, and become a part of our mission to shape the future of NFT.</p>
+        </BurgerNav4>
       </Box>
 
       <Box>
         <Answer2>
-          <p>Q: What is Lorem Ipsum?</p>
+          <p>4- What is the total supply?</p>
           <Arrow rotation={rotation4} onClick={handleClick4}>
             <img src="/images/arrow.png"  onClick={() => setIsVisible4(!isVisible4)}/>
           </Arrow>
         </Answer2>
-        <BurgerNav isVisible={isVisible4}>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </BurgerNav>
+        <BurgerNav5 isVisible={isVisible4}>
+          <p>Kotaro's total supply is limited to 6,000 NFTs.</p>
+        </BurgerNav5>
       </Box>
 
       <Box>
-      <Answer2>
-        <p>Q: What is Lorem Ipsum?</p>
+        <Answer2>
+          <p>5- What is the mint price for one Kotaro and When can I mint?</p>
           <Arrow rotation={rotation5} onClick={handleClick5}>
             <img src="/images/arrow.png"  onClick={() => setIsVisible5(!isVisible5)}/>
           </Arrow>
-      </Answer2>
-        <BurgerNav isVisible={isVisible5}>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </BurgerNav>
-      </Box>
-
-      <Box>
-      <Answer2>
-        <p>Q: What is Lorem Ipsum?</p>
-        <Arrow rotation={rotation6} onClick={handleClick6}>
-          <img src="/images/arrow.png"  onClick={() => setIsVisible6(!isVisible6)}/>
-        </Arrow>
-      </Answer2>
-        <BurgerNav isVisible={isVisible6}>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </BurgerNav>
+        </Answer2>
+        <BurgerNav6 isVisible={isVisible5}>
+          <p>We will be sharing all the exciting details with you in the near future. Stay tune for updates on our latest updates by following us on <a href="https://twitter.com/ProjectKotaro">Twitter.</a></p>
+        </BurgerNav6>
       </Box>
 
       <Box2>
       <Answer3>
-        <p>Q: What is Lorem Ipsum?</p>
-        <Arrow rotation={rotation7} onClick={handleClick7}>
-          <img src="/images/arrow.png"  onClick={() => setIsVisible7(!isVisible7)}/>
+        <p>6- How do I collab with you?</p>
+        <Arrow rotation={rotation6} onClick={handleClick6}>
+          <img src="/images/arrow.png"  onClick={() => setIsVisible6(!isVisible6)}/>
         </Arrow>
       </Answer3>
-        <BurgerNav2 isVisible={isVisible7}>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <BurgerNav2 isVisible={isVisible6}>
+            <p>Fill out this <a href="https://www.google.com/">collab form</a> or DM us on twitter and we will get in touch with you!</p>
         </BurgerNav2>
       </Box2>
     </Container>
@@ -187,6 +172,30 @@ const Answer = styled.div`
     font-family: Comic Sans MS;
     font-size: 22px;
   }
+
+  @media(max-width: 1420px) {
+    width: 1200px;
+  }
+
+  @media(max-width: 1330px) {
+    width: 1000px;
+  }
+
+  @media(max-width: 1125px) {
+    width: 800px;
+  }
+
+  @media(max-width: 920px) {
+    width: 700px;
+  }
+
+  @media(max-width: 790px) {
+    width: 600px;
+  }
+
+  @media(max-width: 655px) {
+    width: 500px;
+  }
 `
 
 const Answer2 = styled(Answer)`
@@ -210,35 +219,366 @@ const Arrow = styled.div`
   }
 `
 
-const XO = styled.div`
-  position: absolute;
-  right: 150px;
-  top: 1530px;
-
-    img {
-      width: 200px;
-      rotate: 50deg;
-    }
-`
-
-
 const BurgerNav = styled.div`
   margin-right: 100px;
   margin-left: 120px;
-  ${props => props.isVisible ? '' : 'display: none;'};
+  height: ${props => (props.isVisible ? "100px": 0)};
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
 
   p {
     font-family: Comic Sans MS;
-    font-size: 15px;
+    font-size: 17px;
+  }
+
+  @media(max-width: 1330px) {
+    margin-right: 170px;
+    margin-left: 170px;
+  }
+
+  @media(max-width: 1200px) {
+    margin-right: 100px;
+    margin-left: 140px;
+  }
+
+  @media(max-width: 1150px) {
+    margin-left: 100px;
+  }
+
+  @media(max-width: 1125px) {
+    margin-right: 160px;
+    margin-left: 150px;
+  }
+
+  @media(max-width: 1070px) {
+    margin-right: 150px;
+    margin-left: 130px;
+  }
+
+  @media(max-width: 975px) {
+    margin-right: 130px;
+    margin-left: 100px;
+  }
+
+  @media(max-width: 856px) {
+    margin-right: 110px;
+    margin-left: 90px;
+  }
+
+  @media(max-width: 701px) {
+    margin-right: 90px;
+    margin-left: 70px;
+  }
+
+  @media(max-width: 588px) {
+    height: ${props => (props.isVisible ? "120px": 0)};
   }
 `
 
 const BurgerNav2 = styled.div`
   margin-left: 20px;
-  ${props => props.isVisible ? '' : 'display: none;'};
+  height: ${props => (props.isVisible ? "100px": 0)};
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
 
   p {
     font-family: Comic Sans MS;
-    font-size: 15px;
+    font-size: 17px;
+  }
+`
+
+const BurgerNav3 = styled.div`
+  width: 1200px;
+  height: ${props => (props.isVisible ? "100px": 0)};
+  transition: height 0.3s ease-in-out;
+  text-align: center;
+  overflow: hidden;
+
+  p {
+    font-family: Comic Sans MS;
+    font-size: 17px;
+  }
+
+  @media(max-width: 1330px) {
+    width: 1000px;
+  }
+
+  @media(max-width: 1200px) {
+    width: 800px;
+  }
+
+  @media(max-width: 1125px) {
+    height: ${props => (props.isVisible ? "120px": 0)};
+  }
+
+  @media(max-width: 930px) {
+    width: 700px;
+  }
+
+  @media(max-width: 856px) {
+    width: 600px;
+    height: ${props => (props.isVisible ? "130px": 0)};
+  }
+
+  @media(max-width: 701px) {
+    width: 500px;
+    height: ${props => (props.isVisible ? "140px": 0)};
+  }
+`
+
+const BurgerNav4 = styled.div`
+  margin-right: 100px;
+  margin-left: 120px;
+  height: ${props => (props.isVisible ? "100px": 0)};
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+
+  p {
+    font-family: Comic Sans MS;
+    font-size: 17px;
+  }
+
+  @media(max-width: 1330px) {
+    margin-right: 170px;
+    margin-left: 170px;
+  }
+
+  @media(max-width: 1200px) {
+    margin-right: 100px;
+    margin-left: 140px;
+  }
+
+  @media(max-width: 1150px) {
+    margin-left: 100px;
+  }
+
+  @media(max-width: 1125px) {
+    margin-right: 160px;
+    margin-left: 150px;
+  }
+
+  @media(max-width: 1070px) {
+    margin-right: 150px;
+    margin-left: 130px;
+  }
+
+  @media(max-width: 975px) {
+    margin-right: 130px;
+    margin-left: 100px;
+  }
+
+  @media(max-width: 856px) {
+    margin-right: 110px;
+    margin-left: 90px;
+  }
+
+  @media(max-width: 701px) {
+    margin-right: 90px;
+    margin-left: 70px;
+    height: ${props => (props.isVisible ? "120px": 0)};
+  }
+`
+
+const BurgerNav5 = styled.div`
+  margin-right: 100px;
+  margin-left: 120px;
+  height: ${props => (props.isVisible ? "100px": 0)};
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+
+  p {
+    font-family: Comic Sans MS;
+    font-size: 17px;
+  }
+
+  @media(max-width: 1330px) {
+    margin-right: 170px;
+    margin-left: 170px;
+  }
+
+  @media(max-width: 1200px) {
+    margin-right: 100px;
+    margin-left: 140px;
+  }
+
+  @media(max-width: 1150px) {
+    margin-left: 100px;
+  }
+
+  @media(max-width: 1125px) {
+    margin-right: 160px;
+    margin-left: 150px;
+  }
+
+  @media(max-width: 1070px) {
+    margin-right: 150px;
+    margin-left: 130px;
+  }
+
+  @media(max-width: 975px) {
+    margin-right: 130px;
+    margin-left: 100px;
+  }
+
+  @media(max-width: 856px) {
+    margin-right: 110px;
+    margin-left: 90px;
+  }
+
+  @media(max-width: 701px) {
+    margin-right: 90px;
+    margin-left: 70px;
+  }
+`
+const BurgerNav6 = styled.div`
+  margin-right: 100px;
+  margin-left: 120px;
+  height: ${props => (props.isVisible ? "100px": 0)};
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+
+  p {
+    font-family: Comic Sans MS;
+    font-size: 17px;
+  }
+
+  @media(max-width: 1330px) {
+    margin-right: 170px;
+    margin-left: 170px;
+  }
+
+  @media(max-width: 1200px) {
+    margin-right: 100px;
+    margin-left: 140px;
+  }
+
+  @media(max-width: 1150px) {
+    margin-left: 100px;
+  }
+
+  @media(max-width: 1125px) {
+    margin-right: 160px;
+    margin-left: 150px;
+
+  }
+
+  @media(max-width: 1070px) {
+    margin-right: 150px;
+    margin-left: 130px;
+  }
+
+  @media(max-width: 975px) {
+    margin-right: 130px;
+    margin-left: 100px;
+  }
+
+  @media(max-width: 856px) {
+    margin-right: 110px;
+    margin-left: 90px;
+  }
+
+  @media(max-width: 701px) {
+    margin-right: 90px;
+    margin-left: 70px;
+  }
+
+  @media(max-width: 600px) {
+    margin-right: 80px;
+    margin-left: 60px;
+    height: ${props => (props.isVisible ? "110px": 0)};
+  }
+`
+
+const XO = styled.div`
+  position: absolute;
+  right: 150px;
+  top: 1530px;
+
+  img {
+    width: 200px;
+    rotate: 50deg;
+  }
+
+  @media(max-width: 1410px) {
+    top: 1490px;
+  }
+
+  @media(max-width: 1390px) {
+    top: 1470px;
+  }
+
+  @media(max-width: 1335px) {
+    top: 1440px;
+  }
+  
+  @media(max-width: 1284px) {
+    top: 1410px;
+  }
+
+  @media(max-width: 1253px) {
+    top: 1285px;
+  }
+
+  @media(max-width: 1100px) {
+    right: 5%;
+    top: 1840px;
+  }
+
+  @media(max-width: 1030px) {
+    top: 1800px;
+  }
+
+  @media(max-width: 850px) {
+    top: 1830px;
+  }
+
+  @media(max-width: 800px) {
+    top: 1710px;
+  }
+
+  @media(max-width: 796px) {
+    top: 1730px;
+  }
+
+  @media(max-width: 732px) {
+    top: 1760px;
+  }
+
+  @media(max-width: 680px) {
+    top: 1780px;
+
+    img {
+      width: 170px;
+    }
+  }
+
+  @media(max-width: 655px) {
+    top: 1810px;
+  }
+
+  @media(max-width: 648px) {
+    top: 1840px;
+  }
+
+
+  @media(max-width: 600px) {
+    right: 6%;
+    top: 1850px;
+
+    img {
+      width: 140px;
+    }
+  }
+
+  @media(max-width: 592px) {
+    top: 1880px;
+  }
+
+  @media(max-width: 569px) {
+    top: 1910px;
+  }
+
+  @media(max-width: 536px) {
+    top: 1940px;
   }
 `

@@ -10,10 +10,8 @@ function feature() {
       </XO2>
 
       <Text>
-        <h2>Section 2</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br />
-        <br />
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>KotaroMap</h2>
+        <p>Our efforts have always been centered on four key components: producing amazing art, developing a strong community, assembling a qualified and experienced team, and using these building blocks to enable future growth. By prioritizing these areas, we aim to take Kotaro to the next level and create a sustainable model for long-term success. We really forgot the fourth huh?</p>
       </Text>
 
     <Picture>
@@ -97,12 +95,21 @@ const Container = styled.div`
   padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
+
+  @media(max-width: 1100px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 60px;
   text-align: center;
   color: white;
   font-family: Comic Sans MS;
@@ -111,6 +118,41 @@ const Text = styled.div`
     line-height: 30px;
     font-size: 20px;
   }
+
+    @media(max-width: 1468px) {
+      p {
+        line-height: 28px;
+        font-size: 19px;
+      }
+    }
+
+    @media(max-width: 1355px) {
+      p {
+        line-height: 25px;
+        font-size: 18px;
+      }
+    }
+
+    @media(max-width: 1270px) {
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+
+    @media(max-width: 1240px) {
+      margin-top: 40px;
+    }
+
+    @media(max-width: 1200px) {
+      margin-left: 50px;
+    }
+
+    @media(max-width: 1100px) {
+      margin-top: 10px;
+      p {
+        line-height: 30px;
+        font-size: 20px;
+      }
+    }
 `
 
 const Picture = styled.div`
@@ -121,6 +163,19 @@ const Picture = styled.div`
   border: 10px solid black;
   border-radius: 20px;
   box-shadow: 1px 1px 40px;
+
+  @media(max-width: 1410px) {
+    width: 550px;
+    height: 577px;
+  }
+
+  @media(max-width: 1100px) {
+    border: 0px solid black;
+    box-shadow: 0px 0px 0px;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 40px;
+  }
 `
 
 const Slider = styled.div`
@@ -131,6 +186,14 @@ const Slider = styled.div`
     width: 153px;
     border-radius: 20px;
   } 
+
+  @media(max-width: 1410px) {
+    width: 550px;
+  }
+
+  @media(max-width: 1100px) {
+    width: 100%;
+  }
 `
 
 const FirstDiv = styled.div`
@@ -162,8 +225,91 @@ const XO2 = styled.div`
   left: 50px;
   top: 740px;
 
+  img {
+    width: 220px;
+    rotate: 5deg;
+  }
+
+  @media(max-width: 1390px) {
+    left: 50px;
+    top: 760px;
+
     img {
       width: 220px;
-      rotate: 5deg;
     }
+  }
+
+  @media(max-width: 1294px) {
+    left: 50px;
+    top: 790px;
+  }
+
+  @media(max-width: 1285px) {
+    left: 50px;
+    top: 740px;
+  }
+
+  @media(max-width: 1280px) {
+    left: 50px;
+    top: 762px;
+  }
+
+  @media(max-width: 1253px) {
+    left: 50px;
+    top: 648px;
+  }
+
+  @media(max-width: 1217px) {
+    left: 10px;
+    top: 665px;
+  }
+
+  @media(max-width: 1182px) {
+    left: 10px;
+    top: 596px;
+  }
+
+  @media(max-width: 1159px) {
+    left: 0px;
+    top: 630px;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  @media(max-width: 1108px) {
+    left: -10px;
+    top: 660px;
+  }
+
+  @media(max-width: 1100px) {
+    top: 890px;
+  }
+
+  @media(max-width: 1030px) {
+    left: 100px;
+    top: 830px;
+  }
+
+  @media(max-width: 801px) {
+    top: 710px;
+  }
+
+  @media(max-width: 701px) {
+    left: 20px;
+    top: 740px;
+  }
+
+  @media(max-width: 630px) {
+    top: 760px;
+  }
+
+  @media(max-width: 590px) {
+    top: 775px;
+
+    img {
+      width: 180px;
+    }
+  }
 `

@@ -10,8 +10,8 @@ function body() {
       </XO3>
 
       <Text>
-        <h2>Section 1</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>About</h2>
+        <p>Kotaro is an original 3D collection of 6000 avatars digitally sculpted NFTs on the Ethereum blockchain to spread Japanese culture. The artwork combines a 3D Japanese style with unique details in each of the characters.</p>
       </Text>
     </Container>
   )
@@ -30,6 +30,71 @@ const Container = styled.div`
     margin-top: 50px;
     margin-left: 50px;
     border-radius: 40px;
+  }
+
+  @media(max-width: 1441px) {
+    img {
+      width: 760px;
+    }
+  }
+
+  @media(max-width: 1335px) {
+    img {
+      width: 700px;
+    }
+  }
+
+  @media(max-width: 1284px) {
+    img {
+      width: 650px;
+    }
+  }
+
+  @media(max-width: 1230px) {
+    img {
+      width: 550px;
+    }
+  }
+
+  @media(max-width: 1182px) {
+    img {
+      width: 500px;
+    }
+  }
+
+  @media(max-width: 1252px) {
+    img {
+      width: 450px;
+    }
+  }
+
+  @media(max-width: 1100px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-left: 0px;
+      width: 800px;
+    }
+  }
+
+  @media(max-width: 1030px) {
+    img {
+      width: 700px;
+    }
+  }
+
+  @media(max-width: 801px) {
+    img {
+      width: 600px;
+    }
+  }
+
+  @media(max-width: 801px) {
+    img {
+      width: 500px;
+    }
   }
 `
 const Text = styled.div`
@@ -52,15 +117,94 @@ const Text = styled.div`
     font-family: Comic Sans MS;
     font-size: 30px;
   }
+
+  @media(max-width: 1441px) {
+    margin-left: 60px;
+  }
+
+  @media(max-width: 1182px) {
+    p {
+      line-height: 28px;
+      font-size: 18px;
+      margin-top: 0px;
+    }
+  }
+
+  @media(max-width: 1100px) {
+    margin-left: 80px;
+  }
 `
 
 const XO3 = styled.div`
   position: absolute;
-  right: 20px;
-  top: 565px;
+  right: 2%;
+  top: 585px;
 
     img {
       width: 200px;
       rotate: 48deg;
+    }
+
+    @media(max-width: 1478px) {
+      right: 2%;
+      top: 600px;
+
+      img {
+        width: 180px;
+      }
+    }
+
+    @media(max-width: 1441px) {
+      right: 2%;
+      top: 590px;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    @media(max-width: 1441px) {
+      right: 2%;
+      top: 590px;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    @media(max-width: 1397px) {
+      right: 2%;
+      top: 120px;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    @media(max-width: 1100px) {
+      right: 2%;
+      top: 120px;
+
+      img {
+        width: 140px;
+      }
+    }
+
+    @media(max-width: 952px) {
+      right: 10%;
+      top: 560px;
+
+      img {
+        width: 140px;
+      }
+    }
+
+    @media(max-width: 801px) {
+      right: 10%;
+      top: 430px;
+
+      img {
+        width: 140px;
+      }
     }
 `
