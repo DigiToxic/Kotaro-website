@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react%20kotaro/static/css/main.4cff3ad1.css",
+    "main.js": "/react%20kotaro/static/js/main.70ae4a16.js",
+    "static/js/787.b94ef3e4.chunk.js": "/react%20kotaro/static/js/787.b94ef3e4.chunk.js",
+    "index.html": "/react%20kotaro/index.html",
+    "main.4cff3ad1.css.map": "/react%20kotaro/static/css/main.4cff3ad1.css.map",
+    "main.70ae4a16.js.map": "/react%20kotaro/static/js/main.70ae4a16.js.map",
+    "787.b94ef3e4.chunk.js.map": "/react%20kotaro/static/js/787.b94ef3e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cff3ad1.css",
+    "static/js/main.70ae4a16.js"
+  ]
+}
