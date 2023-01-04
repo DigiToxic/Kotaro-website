@@ -24,7 +24,7 @@ function Header() {
           <p className='mint'>Mint</p>
           </Text>
           <Image>
-            <a href="https://twitter.com/ProjectKotaro"><img className='photo1' src="/images/twitter.png" alt="" /></a>
+            <a href="https://twitter.com/ProjectKotaro" rel="noreferrer" target="_blank"><img className='photo1' src="/images/twitter.png" alt="" /></a>
             <img className='photo2' src="/images/opensea.png" alt="" />
             <img className='photo3' src="/images/etherscan.png" alt="" />
           </Image>
@@ -38,7 +38,7 @@ function Header() {
               <li><Link to="Feature" spy={true} smooth={true} onClick={() => setBurgerStatus(false)}>Kotaromap</Link></li>
               <li><Link to="Question" spy={true} smooth={true} onClick={() => setBurgerStatus(false)}>FAQ</Link></li>
               <li>Mint</li>
-              <a href="https://twitter.com/ProjectKotaro"><img src="/images/twitter.png" alt=""/></a>
+              <a href="https://twitter.com/ProjectKotaro" rel="noreferrer" target="_blank"><img src="/images/twitter.png" alt=""/></a>
               <img src="/images/opensea.png" alt=""/>
               <img src="/images/etherscan.png" alt=""/>
           </BurgerNav>
