@@ -157,6 +157,10 @@ a {
   color: white;
 }
 
+li {
+  color: white;
+}
+
 a:visited { text-decoration: none; }
 
 
