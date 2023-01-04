@@ -340,6 +340,6 @@ const XO2 = styled.div`
   }
 
   @media(max-width: 420px) {
-    top: 820px;
+    top: 800px;
   }
 `
