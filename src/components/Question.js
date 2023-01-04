@@ -16,10 +16,6 @@ function Question() {
   const [rotation5, setRotation5] = useState(0);
   const [rotation6, setRotation6] = useState(0);
 
-  const toggleCollapsed = () => {
-    setIsVisible(!isVisible);
-  }
-
   const handleClick = () => {
     setRotation(rotation + 180)
   };
@@ -52,20 +48,22 @@ function Question() {
         <img src="/images/XO.png" alt="" />
       </XO>
 
-      <Box>
+      <div rotation={rotation} onClick={handleClick}>
+      <Box onClick={() => setIsVisible(!isVisible)}>
         <Answer>
           <p>1- Who are we?</p>
-
           <Arrow rotation={rotation} onClick={handleClick}>
-            <img src="/images/arrow.png" alt="" onClick={toggleCollapsed}/>
+            <img src="/images/arrow.png" alt="" onClick={() => setIsVisible(!isVisible)}/>
           </Arrow>
         </Answer>
         <BurgerNav isVisible={isVisible}>
             <p>Ledding by a team of blockchain enthusiasts and collectors that have experience in fields like business management, design, and software development.</p>
         </BurgerNav>
       </Box>
+      </div>
 
-      <Box>
+      <div rotation={rotation2} onClick={handleClick2}>
+      <Box onClick={() => setIsVisible2(!isVisible2)} rotation={rotation2}>
         <Answer2>
           <p>2- Utility? </p>
           <Arrow rotation={rotation2} onClick={handleClick2}>
@@ -76,8 +74,10 @@ function Question() {
               <p>Utility is a mysterious force that drives our actions, yet it remains hidden from view. We can only trust our instincts and make our best guesses. Even the most carefully planned actions can be upended by the unpredictable nature of utility. Only time will tell!</p>
           </BurgerNav3>
       </Box>
+      </div>
 
-      <Box>
+      <div rotation={rotation3} onClick={handleClick3}>
+      <Box onClick={() => setIsVisible3(!isVisible3)}>
         <Answer2>
           <p>3- How do I get on the allowlist?</p>
           <Arrow rotation={rotation3} onClick={handleClick3}>
@@ -88,8 +88,10 @@ function Question() {
             <p>Join our community by registering for our <a href="https://www.premint.xyz/home/">premint</a> or engaging with our tweets, and become a part of our mission to shape the future of NFT.</p>
         </BurgerNav4>
       </Box>
+      </div>
 
-      <Box>
+      <div rotation={rotation4} onClick={handleClick4}>
+      <Box onClick={() => setIsVisible4(!isVisible4)}>
         <Answer2>
           <p>4- What is the total supply?</p>
           <Arrow rotation={rotation4} onClick={handleClick4}>
@@ -100,8 +102,10 @@ function Question() {
           <p>Kotaro's total supply is limited to 6,000 NFTs.</p>
         </BurgerNav5>
       </Box>
+      </div>
 
-      <Box>
+      <div rotation={rotation5} onClick={handleClick5}>
+      <Box onClick={() => setIsVisible5(!isVisible5)}>
         <Answer2>
           <p>5- What is the mint price for one Kotaro and When can I mint?</p>
           <Arrow rotation={rotation5} onClick={handleClick5}>
@@ -112,8 +116,10 @@ function Question() {
           <p>We will be sharing all the exciting details with you in the near future. Stay tune for updates on our latest updates by following us on <a href="https://twitter.com/ProjectKotaro">Twitter.</a></p>
         </BurgerNav6>
       </Box>
+      </div>
 
-      <Box2>
+      <div rotation={rotation6} onClick={handleClick6}>
+      <Box2 onClick={() => setIsVisible6(!isVisible6)}>
       <Answer3>
         <p>6- How do I collab with you?</p>
         <Arrow rotation={rotation6} onClick={handleClick6}>
@@ -124,6 +130,7 @@ function Question() {
             <p>Fill out this <a href="https://www.google.com/">collab form</a> or DM us on twitter and we will get in touch with you!</p>
         </BurgerNav2>
       </Box2>
+      </div>
     </Container>
   )
 }
