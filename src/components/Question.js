@@ -196,6 +196,14 @@ const Answer = styled.div`
   @media(max-width: 655px) {
     width: 500px;
   }
+
+  @media(max-width: 525px) {
+    width: 400px;
+  }
+
+  @media(max-width: 430px) {
+    width: 300px;
+  }
 `
 
 const Answer2 = styled(Answer)`
@@ -273,6 +281,10 @@ const BurgerNav = styled.div`
   @media(max-width: 588px) {
     height: ${props => (props.isVisible ? "120px": 0)};
   }
+
+  @media(max-width: 511px) {
+    height: ${props => (props.isVisible ? "170px": 0)};
+  }
 `
 
 const BurgerNav2 = styled.div`
@@ -323,6 +335,16 @@ const BurgerNav3 = styled.div`
   @media(max-width: 701px) {
     width: 500px;
     height: ${props => (props.isVisible ? "140px": 0)};
+  }
+
+  @media(max-width: 525px) {
+    width: 400px;
+    height: ${props => (props.isVisible ? "190px": 0)};
+  }
+
+  @media(max-width: 480px) {
+    width: 325px;
+    height: ${props => (props.isVisible ? "190px": 0)};
   }
 `
 
@@ -376,6 +398,12 @@ const BurgerNav4 = styled.div`
     margin-right: 90px;
     margin-left: 70px;
     height: ${props => (props.isVisible ? "120px": 0)};
+  }
+
+  @media(max-width: 449px) {
+    margin-right: 90px;
+    margin-left: 70px;
+    height: ${props => (props.isVisible ? "160px": 0)};
   }
 `
 
@@ -487,6 +515,14 @@ const BurgerNav6 = styled.div`
     margin-left: 60px;
     height: ${props => (props.isVisible ? "110px": 0)};
   }
+
+  @media(max-width: 600px) {
+    height: ${props => (props.isVisible ? "110px": 0)};
+  }
+
+  @media(max-width: 422px) {
+    height: ${props => (props.isVisible ? "140px": 0)};
+  }
 `
 
 const XO = styled.div`
@@ -580,5 +616,35 @@ const XO = styled.div`
 
   @media(max-width: 536px) {
     top: 1940px;
+  }
+
+  @media(max-width: 526px) {
+    top: 1880px;
+  }
+
+  @media(max-width: 508px) {
+    right: 4%;
+    top: 1900px;
+  }
+
+  @media(max-width: 498px) {
+    right: 3%;
+    top: 1930px;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  @media(max-width: 460px) {
+    top: 1970px;
+  }
+
+  @media(max-width: 440px) {
+    top: 2000px;
+  }
+
+  @media(max-width: 416px) {
+    top: 2090px;
   }
 `

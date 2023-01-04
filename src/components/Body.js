@@ -96,6 +96,18 @@ const Container = styled.div`
       width: 500px;
     }
   }
+
+  @media(max-width: 525px) {
+    img {
+      width: 400px;
+    }
+  }
+
+  @media(max-width: 425px) {
+    img {
+      width: 375px;
+    }
+  }
 `
 const Text = styled.div`
   display: flex;
@@ -193,18 +205,23 @@ const XO3 = styled.div`
     @media(max-width: 952px) {
       right: 10%;
       top: 560px;
-
-      img {
-        width: 140px;
-      }
     }
 
     @media(max-width: 801px) {
       right: 10%;
       top: 430px;
+    }
+
+    @media(max-width: 525px) {
+      right: 10%;
+      top: 370px;
+    }
+
+    @media(max-width: 430px) {
+      right: 5%;
 
       img {
-        width: 140px;
+        width: 120px;
       }
     }
 `

@@ -312,4 +312,34 @@ const XO2 = styled.div`
       width: 180px;
     }
   }
+
+  @media(max-width: 569px) {
+    top: 795px;
+  }
+
+  @media(max-width: 526px) {
+    left: 8px;
+    top: 740px;
+
+    img {
+      width: 170px;
+    }
+  }
+
+  @media(max-width: 498px) {
+    top: 770px;
+  }
+
+  @media(max-width: 456px) {
+    left: -4px;
+    top: 780px;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  @media(max-width: 420px) {
+    top: 820px;
+  }
 `
