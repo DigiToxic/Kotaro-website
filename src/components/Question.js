@@ -641,6 +641,6 @@ const XO = styled.div`
   }
 
   @media(max-width: 440px) {
-    top: 2000px;
+    top: 2020px;
   }
 `
