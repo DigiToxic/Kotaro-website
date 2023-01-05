@@ -661,4 +661,8 @@ const XO = styled.div`
   @media(max-width: 440px) {
     top: 2020px;
   }
+
+  @media(max-width: 431px) {
+    top: 1970px;
+  }
 `
