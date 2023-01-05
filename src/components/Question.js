@@ -149,8 +149,6 @@ const Container = styled.div`
   h2 {
     margin-top: 40px;
     margin-bottom: 30px;
-    text-align: center;
-    width: 200px;
   }
 `
 const Box = styled.div`
@@ -163,8 +161,7 @@ const Box = styled.div`
 
 const Box2 = styled(Box)`
   border-bottom: 2px solid rgb(0, 0, 0);
-  margin-right: 130px;
-  margin-left: 130px;
+  text-align: left;
 `
 
 const Answer = styled.div`
@@ -236,11 +233,13 @@ const Arrow = styled.div`
 `
 
 const BurgerNav = styled.div`
-  margin-right: 100px;
-  margin-left: 120px;
+
   height: ${props => (props.isVisible ? "100px": 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
+  dsiplay: flex;
+  justify-content: start;
+  align-items: start;
 
   p {
     font-family: Comic Sans MS;

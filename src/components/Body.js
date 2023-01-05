@@ -10,7 +10,7 @@ function body() {
       </XO3>
 
       <Text>
-        <h2>About</h2>
+        <h1>About</h1>
         <p>Kotaro is an original 3D collection of 6000 avatars digitally sculpted NFTs on the Ethereum blockchain to spread Japanese culture. The artwork combines a 3D Japanese style with unique details in each of the characters.</p>
       </Text>
     </Container>
@@ -121,13 +121,20 @@ const Text = styled.div`
   font-family: Comic Sans MS;
 
   p {
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 40px;
+    font-size: 30px;
   }
 
-  h2 {
+  h1 {
     font-family: Comic Sans MS;
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  @media(max-width: 1253px) {
+    p{
+      line-height: 30px;
+      font-size: 20px;
+    }
   }
 
   @media(max-width: 1441px) {

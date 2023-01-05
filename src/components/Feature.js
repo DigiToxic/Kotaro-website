@@ -10,7 +10,7 @@ function feature() {
       </XO2>
 
       <Text>
-        <h2>KotaroMap</h2>
+        <h1>KotaroMap</h1>
         <p>Our efforts have always been centered on four key components: producing amazing art, developing a strong community, assembling a qualified and experienced team, and using these building blocks to enable future growth. By prioritizing these areas, we aim to take Kotaro to the next level and create a sustainable model for long-term success. We really forgot the fourth huh?</p>
       </Text>
 
@@ -115,54 +115,72 @@ const Text = styled.div`
   font-family: Comic Sans MS;
 
   p {
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 40px;
+    font-size: 26px;
   }
 
-    @media(max-width: 1468px) {
-      p {
-        line-height: 28px;
-        font-size: 19px;
-      }
-    }
+  @media(max-width: 1781px) {
+    margin-top: 30px;
+  }
 
-    @media(max-width: 1355px) {
-      p {
-        line-height: 25px;
-        font-size: 18px;
-      }
-    }
+  @media(max-width: 1682px) {
+    margin-top: 80px;
 
-    @media(max-width: 1270px) {
-      margin-left: 70px;
-      margin-right: 70px;
+    p {
+      line-height: 35px;
+      font-size: 26px;
     }
+  }
 
-    @media(max-width: 1240px) {
-      margin-top: 40px;
-    }
+  @media(max-width: 1570px) {
+    margin-top: 80px;
+  }
 
-    @media(max-width: 1200px) {
-      margin-left: 50px;
+  @media(max-width: 1426px) {
+    p {
+      line-height: 35px;
+      font-size: 22px;
     }
+  }
 
-    @media(max-width: 1100px) {
-      margin-top: 10px;
-      p {
-        line-height: 30px;
-        font-size: 20px;
-      }
+  @media(max-width: 1270px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  @media(max-width: 1240px) {
+    margin-top: 40px;
+  }
+
+  @media(max-width: 1200px) {
+    margin-left: 50px;
+  }
+
+  @media(max-width: 1100px) {
+    margin-top: 10px;
+    p {
+      line-height: 30px;
+      font-size: 20px;
     }
+  }
 `
 
 const Picture = styled.div`
   margin-right: 40px;
   margin-top: 80px;
-  width: 600px;
+  width: 1000px;
   height: 627px;
   border: 10px solid black;
   border-radius: 20px;
   box-shadow: 1px 1px 40px;
+
+  @media(max-width: 1683px) {
+    width: 900px;
+  }
+
+  @media(max-width: 1571px) {
+    width: 800px;
+  }
 
   @media(max-width: 1410px) {
     width: 550px;
@@ -180,12 +198,20 @@ const Picture = styled.div`
 
 const Slider = styled.div`
   margin-right: 40px;
-  width: 600px;
+  width: 1000px;
 
   img {
     width: 153px;
     border-radius: 20px;
   } 
+
+  @media(max-width: 1683px) {
+    width: 900px;
+  }
+
+  @media(max-width: 1571px) {
+    width: 800px;
+  }
 
   @media(max-width: 1410px) {
     width: 550px;
