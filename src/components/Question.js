@@ -662,7 +662,7 @@ const XO = styled.div`
     top: 2020px;
   }
 
-  @media(max-width: 431px) {
+  @media(max-width: 420px) {
     top: 1970px;
   }
 `
