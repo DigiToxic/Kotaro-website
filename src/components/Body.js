@@ -1,23 +1,28 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 function body() {
   return (
-    <Container id='Body'>
-        <img className='MainPfp' src="/images/Kotaro.jpg" alt="" />
+    <Container id="Body">
+      <img className="MainPfp" src="/images/Kotaro.jpg" alt="" />
       <XO3>
         <img src="/images/XO.png" alt="" />
       </XO3>
 
       <Text>
         <h1>About</h1>
-        <p>Kotaro is an original 3D collection of 6000 avatars digitally sculpted NFTs on the Ethereum blockchain to spread Japanese culture. The artwork combines a 3D Japanese style with unique details in each of the characters.</p>
+        <p>
+          Kotaro is an original 3D collection of 6000 avatars digitally sculpted
+          NFTs on the Ethereum blockchain to spread Japanese culture. The
+          artwork combines a 3D Japanese style with unique details in each of
+          the characters.
+        </p>
       </Text>
     </Container>
-  )
+  );
 }
 
-export default body
+export default body;
 
 const Container = styled.div`
   background-color: rgb(178, 102, 255);
@@ -32,43 +37,43 @@ const Container = styled.div`
     border-radius: 40px;
   }
 
-  @media(max-width: 1441px) {
+  @media (max-width: 1441px) {
     img {
       width: 760px;
     }
   }
 
-  @media(max-width: 1335px) {
+  @media (max-width: 1335px) {
     img {
       width: 700px;
     }
   }
 
-  @media(max-width: 1284px) {
+  @media (max-width: 1284px) {
     img {
       width: 650px;
     }
   }
 
-  @media(max-width: 1230px) {
+  @media (max-width: 1230px) {
     img {
       width: 550px;
     }
   }
 
-  @media(max-width: 1182px) {
+  @media (max-width: 1182px) {
     img {
       width: 500px;
     }
   }
 
-  @media(max-width: 1252px) {
+  @media (max-width: 1252px) {
     img {
       width: 450px;
     }
   }
 
-  @media(max-width: 1100px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -79,36 +84,36 @@ const Container = styled.div`
     }
   }
 
-  @media(max-width: 1030px) {
+  @media (max-width: 1030px) {
     img {
       width: 700px;
     }
   }
 
-  @media(max-width: 801px) {
+  @media (max-width: 801px) {
     img {
       width: 600px;
     }
   }
 
-  @media(max-width: 801px) {
+  @media (max-width: 801px) {
     img {
       width: 500px;
     }
   }
 
-  @media(max-width: 525px) {
+  @media (max-width: 525px) {
     img {
       width: 400px;
     }
   }
 
-  @media(max-width: 425px) {
+  @media (max-width: 425px) {
     img {
       width: 375px;
     }
   }
-`
+`;
 const Text = styled.div`
   display: flex;
   flex-direction: column;
@@ -130,18 +135,18 @@ const Text = styled.div`
     font-size: 40px;
   }
 
-  @media(max-width: 1253px) {
-    p{
+  @media (max-width: 1253px) {
+    p {
       line-height: 30px;
       font-size: 20px;
     }
   }
 
-  @media(max-width: 1441px) {
+  @media (max-width: 1441px) {
     margin-left: 60px;
   }
 
-  @media(max-width: 1182px) {
+  @media (max-width: 1182px) {
     p {
       line-height: 28px;
       font-size: 18px;
@@ -149,86 +154,86 @@ const Text = styled.div`
     }
   }
 
-  @media(max-width: 1100px) {
+  @media (max-width: 1100px) {
     margin-left: 80px;
   }
-`
+`;
 
 const XO3 = styled.div`
   position: absolute;
   right: 2%;
   top: 585px;
 
+  img {
+    width: 200px;
+    rotate: 48deg;
+  }
+
+  @media (max-width: 1478px) {
+    right: 2%;
+    top: 600px;
+
     img {
-      width: 200px;
-      rotate: 48deg;
+      width: 180px;
     }
+  }
 
-    @media(max-width: 1478px) {
-      right: 2%;
-      top: 600px;
+  @media (max-width: 1441px) {
+    right: 2%;
+    top: 590px;
 
-      img {
-        width: 180px;
-      }
+    img {
+      width: 160px;
     }
+  }
 
-    @media(max-width: 1441px) {
-      right: 2%;
-      top: 590px;
+  @media (max-width: 1441px) {
+    right: 2%;
+    top: 590px;
 
-      img {
-        width: 160px;
-      }
+    img {
+      width: 160px;
     }
+  }
 
-    @media(max-width: 1441px) {
-      right: 2%;
-      top: 590px;
+  @media (max-width: 1397px) {
+    right: 2%;
+    top: 120px;
 
-      img {
-        width: 160px;
-      }
+    img {
+      width: 160px;
     }
+  }
 
-    @media(max-width: 1397px) {
-      right: 2%;
-      top: 120px;
+  @media (max-width: 1100px) {
+    right: 2%;
+    top: 120px;
 
-      img {
-        width: 160px;
-      }
+    img {
+      width: 140px;
     }
+  }
 
-    @media(max-width: 1100px) {
-      right: 2%;
-      top: 120px;
+  @media (max-width: 952px) {
+    right: 10%;
+    top: 560px;
+  }
 
-      img {
-        width: 140px;
-      }
+  @media (max-width: 801px) {
+    right: 10%;
+    top: 430px;
+  }
+
+  @media (max-width: 525px) {
+    right: 10%;
+    top: 370px;
+  }
+
+  @media (max-width: 430px) {
+    right: 5%;
+
+    img {
+      width: 120px;
     }
-
-    @media(max-width: 952px) {
-      right: 10%;
-      top: 560px;
-    }
-
-    @media(max-width: 801px) {
-      right: 10%;
-      top: 430px;
-    }
-
-    @media(max-width: 525px) {
-      right: 10%;
-      top: 370px;
-    }
-
-    @media(max-width: 430px) {
-      right: 5%;
-
-      img {
-        width: 120px;
-      }
-    }
-`
+  }
+`;

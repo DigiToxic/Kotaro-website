@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 function footer() {
   return (
@@ -11,10 +11,10 @@ function footer() {
         <img src="/images/project.png" alt="" />
       </Image2>
     </Container>
-  )
+  );
 }
 
-export default footer
+export default footer;
 
 const Container = styled.div`
   background-color: rgb(100, 0, 200);
@@ -23,7 +23,7 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 const Image1 = styled.div`
   margin-left: 5%;
@@ -31,7 +31,7 @@ const Image1 = styled.div`
   img {
     width: 150px;
   }
-`
+`;
 
 const Image2 = styled.div`
   margin-right: 5%;
@@ -39,4 +39,4 @@ const Image2 = styled.div`
     width: 153px;
     200px;
   }
-`
+`;
