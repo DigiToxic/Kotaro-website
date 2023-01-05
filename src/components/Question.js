@@ -85,7 +85,7 @@ function Question() {
           </Arrow>
         </Answer2>
         <BurgerNav4 isVisible={isVisible3}>
-            <p>Join our community by registering for our <a href="https://www.premint.xyz/home/">premint</a> or engaging with our tweets, and become a part of our mission to shape the future of NFT.</p>
+            <p>Join our community by registering for our <a href="https://www.premint.xyz/home/" rel="noreferrer" target="_blank">premint</a> or engaging with our tweets, and become a part of our mission to shape the future of NFT.</p>
         </BurgerNav4>
       </Box>
       </div>
@@ -113,7 +113,7 @@ function Question() {
           </Arrow>
         </Answer2>
         <BurgerNav6 isVisible={isVisible5}>
-          <p>We will be sharing all the exciting details with you in the near future. Stay tune for updates on our latest updates by following us on <a href="https://twitter.com/ProjectKotaro">Twitter.</a></p>
+          <p>We will be sharing all the exciting details with you in the near future. Stay tune for updates on our latest updates by following us on <a href="https://twitter.com/ProjectKotaro" rel="noreferrer" target="_blank">Twitter.</a></p>
         </BurgerNav6>
       </Box>
       </div>
@@ -127,7 +127,7 @@ function Question() {
         </Arrow>
       </Answer3>
         <BurgerNav2 isVisible={isVisible6}>
-            <p>Fill out this <a href="https://www.google.com/">collab form</a> or DM us on twitter and we will get in touch with you!</p>
+            <p>Fill out this <a href="https://www.google.com/" rel="noreferrer" target="_blank">collab form</a> or DM us on twitter and we will get in touch with you!</p>
         </BurgerNav2>
       </Box2>
       </div>
@@ -161,7 +161,6 @@ const Box = styled.div`
 
 const Box2 = styled(Box)`
   border-bottom: 2px solid rgb(0, 0, 0);
-  text-align: left;
 `
 
 const Answer = styled.div`
@@ -233,69 +232,64 @@ const Arrow = styled.div`
 `
 
 const BurgerNav = styled.div`
-
   height: ${props => (props.isVisible ? "100px": 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  dsiplay: flex;
-  justify-content: start;
-  align-items: start;
+  margin-right: 80px;
 
   p {
     font-family: Comic Sans MS;
     font-size: 17px;
   }
 
+  @media(max-width: 1421px) {
+    margin-right: 80px;
+    width: 1100px;
+  }
+
   @media(max-width: 1330px) {
-    margin-right: 170px;
-    margin-left: 170px;
-  }
-
-  @media(max-width: 1200px) {
-    margin-right: 100px;
-    margin-left: 140px;
-  }
-
-  @media(max-width: 1150px) {
-    margin-left: 100px;
+    margin-right: 30px;
+    width: 950px;
   }
 
   @media(max-width: 1125px) {
-    margin-right: 160px;
-    margin-left: 150px;
+    margin-right: 30px;
+    width: 750px;
   }
 
-  @media(max-width: 1070px) {
-    margin-right: 150px;
-    margin-left: 130px;
+  @media(max-width: 920px) {
+    margin-right: 30px;
+    width: 650px;
   }
 
-  @media(max-width: 975px) {
-    margin-right: 130px;
-    margin-left: 100px;
+  @media(max-width: 790px) {
+    margin-right: 30px;
+    width: 550px;
   }
 
-  @media(max-width: 856px) {
-    margin-right: 110px;
-    margin-left: 90px;
+  @media(max-width: 655px) {
+    margin-right: 30px;
+    width: 450px;
   }
 
-  @media(max-width: 701px) {
-    margin-right: 90px;
-    margin-left: 70px;
+  @media(max-width: 525px) {
+    margin-right: 30px;
+    width: 350px;
+    height: ${props => (props.isVisible ? "110px": 0)};
   }
 
-  @media(max-width: 588px) {
-    height: ${props => (props.isVisible ? "120px": 0)};
-  }
-
-  @media(max-width: 511px) {
-    height: ${props => (props.isVisible ? "170px": 0)};
+  @media(max-width: 430px) {
+    height: ${props => (props.isVisible ? "160px": 0)};
+    margin-right: 30px;
+    width: 250px;
+    p {
+      margin-top: 0px;
+    }
   }
 `
 
 const BurgerNav2 = styled.div`
-  margin-left: 20px;
+  margin-right: 670px;
   height: ${props => (props.isVisible ? "100px": 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
@@ -303,61 +297,103 @@ const BurgerNav2 = styled.div`
   p {
     font-family: Comic Sans MS;
     font-size: 17px;
+  }
+
+  @media(max-width: 1420px) {
+    margin-right: 570px;
+  }
+
+  @media(max-width: 1330px) {
+    margin-right: 30px;
+    width: 950px;
+  }
+
+  @media(max-width: 1125px) {
+    margin-right: 30px;
+    width: 750px;
+  }
+
+  @media(max-width: 920px) {
+    width: 650px;
+  }
+
+  @media(max-width: 790px) {
+    width: 550px;
+  }
+
+  @media(max-width: 655px) {
+    width: 450px;;
+  }
+
+  @media(max-width: 525px) {
+    width: 350px;
+  }
+
+  @media(max-width: 430px) {
+    width: 250px;
+    p {
+      margin-top: 0px;
+    }
   }
 `
 
 const BurgerNav3 = styled.div`
-  width: 1200px;
   height: ${props => (props.isVisible ? "100px": 0)};
   transition: height 0.3s ease-in-out;
-  text-align: center;
   overflow: hidden;
+  margin-right: 80px;
+  width: 1200px;
 
   p {
     font-family: Comic Sans MS;
     font-size: 17px;
   }
 
-  @media(max-width: 1330px) {
-    width: 1000px;
+  @media(max-width: 1420px) {
+    width: 1100px;
   }
 
-  @media(max-width: 1200px) {
-    width: 800px;
+  @media(max-width: 1330px) {
+    margin-right: 30px;
+    width: 950px;
   }
 
   @media(max-width: 1125px) {
+    margin-right: 30px;
+    width: 750px;
+  }
+
+  @media(max-width: 920px) {
+    width: 650px;
     height: ${props => (props.isVisible ? "120px": 0)};
   }
 
-  @media(max-width: 930px) {
-    width: 700px;
+  @media(max-width: 790px) {
+    width: 550px;
+    height: ${props => (props.isVisible ? "120px": 0)};
   }
 
-  @media(max-width: 856px) {
-    width: 600px;
-    height: ${props => (props.isVisible ? "130px": 0)};
-  }
-
-  @media(max-width: 701px) {
-    width: 500px;
+  @media(max-width: 655px) {
+    width: 450px;
     height: ${props => (props.isVisible ? "140px": 0)};
   }
 
   @media(max-width: 525px) {
-    width: 400px;
+    width: 350px;
     height: ${props => (props.isVisible ? "190px": 0)};
   }
 
-  @media(max-width: 480px) {
-    width: 325px;
-    height: ${props => (props.isVisible ? "190px": 0)};
+  @media(max-width: 430px) {
+    width: 250px;
+    height: ${props => (props.isVisible ? "230px": 0)};
+    p {
+      margin-top: 0px;
+    }
   }
 `
 
 const BurgerNav4 = styled.div`
-  margin-right: 100px;
-  margin-left: 120px;
+  margin-right: 160px;
   height: ${props => (props.isVisible ? "100px": 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
@@ -367,56 +403,47 @@ const BurgerNav4 = styled.div`
     font-size: 17px;
   }
 
+  @media(max-width: 1421px) {
+    margin-right: 60px;
+  }
+
   @media(max-width: 1330px) {
-    margin-right: 170px;
-    margin-left: 170px;
-  }
-
-  @media(max-width: 1200px) {
-    margin-right: 100px;
-    margin-left: 140px;
-  }
-
-  @media(max-width: 1150px) {
-    margin-left: 100px;
+    margin-right: 30px;
+    width: 950px;
   }
 
   @media(max-width: 1125px) {
-    margin-right: 160px;
-    margin-left: 150px;
+    width: 750px;
   }
 
-  @media(max-width: 1070px) {
-    margin-right: 150px;
-    margin-left: 130px;
+  @media(max-width: 921px) {
+    width: 650px;
   }
 
-  @media(max-width: 975px) {
-    margin-right: 130px;
-    margin-left: 100px;
+  @media(max-width: 790px) {
+    width: 550px;
   }
 
-  @media(max-width: 856px) {
-    margin-right: 110px;
-    margin-left: 90px;
+  @media(max-width: 655px) {
+    width: 450px;
   }
 
-  @media(max-width: 701px) {
-    margin-right: 90px;
-    margin-left: 70px;
+  @media(max-width: 525px) {
+    width: 350px;
     height: ${props => (props.isVisible ? "120px": 0)};
   }
 
-  @media(max-width: 449px) {
-    margin-right: 90px;
-    margin-left: 70px;
-    height: ${props => (props.isVisible ? "160px": 0)};
+  @media(max-width: 430px) {
+    width: 250px;
+    height: ${props => (props.isVisible ? "140px": 0)};
+    p {
+      margin-top: 0px;
+    }
   }
 `
 
 const BurgerNav5 = styled.div`
-  margin-right: 100px;
-  margin-left: 120px;
+  margin-right: 910px;
   height: ${props => (props.isVisible ? "100px": 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
@@ -426,48 +453,44 @@ const BurgerNav5 = styled.div`
     font-size: 17px;
   }
 
+  @media(max-width: 1421px) {
+    margin-right: 810px;
+  }
+
   @media(max-width: 1330px) {
-    margin-right: 170px;
-    margin-left: 170px;
-  }
-
-  @media(max-width: 1200px) {
-    margin-right: 100px;
-    margin-left: 140px;
-  }
-
-  @media(max-width: 1150px) {
-    margin-left: 100px;
+    margin-right: 610px;
   }
 
   @media(max-width: 1125px) {
-    margin-right: 160px;
-    margin-left: 150px;
+    margin-right: 410px;
   }
 
-  @media(max-width: 1070px) {
-    margin-right: 150px;
-    margin-left: 130px;
+  @media(max-width: 920px) {
+    margin-right: 310px;
   }
 
-  @media(max-width: 975px) {
-    margin-right: 130px;
-    margin-left: 100px;
+  @media(max-width: 790px) {
+    margin-right: 210px;
   }
 
-  @media(max-width: 856px) {
+  @media(max-width: 655px) {
     margin-right: 110px;
-    margin-left: 90px;
   }
 
-  @media(max-width: 701px) {
-    margin-right: 90px;
-    margin-left: 70px;
+  @media(max-width: 525px) {
+    margin-right: 10px;
+  }
+
+  @media(max-width: 430px) {
+    width: 275px;
+    margin-right: 10px;
+    p {
+      margin-top: 0px;
+    }
   }
 `
 const BurgerNav6 = styled.div`
-  margin-right: 100px;
-  margin-left: 120px;
+  margin-right: 170px;
   height: ${props => (props.isVisible ? "100px": 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
@@ -477,58 +500,46 @@ const BurgerNav6 = styled.div`
     font-size: 17px;
   }
 
-  @media(max-width: 1330px) {
-    margin-right: 170px;
-    margin-left: 170px;
+  @media(max-width: 1421px) {
+    margin-right: 70px;
   }
-
-  @media(max-width: 1200px) {
-    margin-right: 100px;
-    margin-left: 140px;
+  
+  @media(max-width: 1330px) {
+    margin-right: 40px;
+    width: 950px;
   }
 
   @media(max-width: 1150px) {
-    margin-left: 100px;
+    margin-right: 40px;
   }
 
   @media(max-width: 1125px) {
-    margin-right: 160px;
-    margin-left: 150px;
-
+    width: 750px;
   }
 
-  @media(max-width: 1070px) {
-    margin-right: 150px;
-    margin-left: 130px;
+  @media(max-width: 920px) {
+    width: 650px;
   }
 
-  @media(max-width: 975px) {
-    margin-right: 130px;
-    margin-left: 100px;
+  @media(max-width: 790px) {
+    width: 550px;
   }
 
-  @media(max-width: 856px) {
-    margin-right: 110px;
-    margin-left: 90px;
+  @media(max-width: 655px) {
+    width: 450px;
   }
 
-  @media(max-width: 701px) {
-    margin-right: 90px;
-    margin-left: 70px;
+  @media(max-width: 525px) {
+    width: 350px;
+    height: ${props => (props.isVisible ? "120px": 0)};
   }
 
-  @media(max-width: 600px) {
-    margin-right: 80px;
-    margin-left: 60px;
-    height: ${props => (props.isVisible ? "110px": 0)};
-  }
-
-  @media(max-width: 600px) {
-    height: ${props => (props.isVisible ? "110px": 0)};
-  }
-
-  @media(max-width: 422px) {
+  @media(max-width: 430px) {
+    width: 250px;
     height: ${props => (props.isVisible ? "140px": 0)};
+    p {
+      margin-top: 0px;
+    }
   }
 `
 
