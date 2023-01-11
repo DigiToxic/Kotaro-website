@@ -41,7 +41,7 @@ function Question() {
   };
 
   return (
-    <Container id="Question">
+    <Container>
       <h2>Frequently Asked Questions</h2>
 
       <XO>

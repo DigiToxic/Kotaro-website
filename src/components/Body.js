@@ -17,6 +17,7 @@ function body() {
           artwork combines a 3D Japanese style with unique details in each of
           the characters.
         </p>
+        <div id="Feature"></div>
       </Text>
     </Container>
   );

@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 function feature() {
   return (
-    <Container id="Feature">
+    <Container>
       <XO2>
         <img src="/images/XO.png" alt="" />
       </XO2>
@@ -90,7 +90,7 @@ function feature() {
             <FiveDiv>
               <img src="/images/Carousel/Nonoku8.png" alt="" />
             </FiveDiv>
-            <SixDiv>
+            <SixDiv id="Question">
               <img src="/images/Carousel/Nonoku9.png" alt="" />
             </SixDiv>
           </Marquee>
