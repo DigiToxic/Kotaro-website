@@ -25,6 +25,7 @@ function body() {
 export default body;
 
 const Container = styled.div`
+  margin-top: 160px;
   background-color: rgb(178, 102, 255);
   padding-bottom: 50px;
   display: flex;
@@ -37,13 +38,13 @@ const Container = styled.div`
     border-radius: 40px;
   }
 
-  @media (max-width: 1441px) {
+  @media (max-width: 1441px) {F
     img {
       width: 760px;
     }
   }
 
-  @media (max-width: 1335px) {
+  @media (max-width: 1335px) {F
     img {
       width: 700px;
     }
@@ -65,6 +66,10 @@ const Container = styled.div`
     img {
       width: 500px;
     }
+  }
+
+  @media (max-width: 1100px) {
+    margin-top: 100px;
   }
 
   @media (max-width: 1252px) {
